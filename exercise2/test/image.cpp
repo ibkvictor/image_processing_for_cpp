@@ -1,12 +1,7 @@
 #include "image.h"
 #include <vector>
-
+#include <iostream>
 using namespace igg;
-
-/*int rows_ = 0;
-int cols_ = 0;
-std::vector<std::vector<int>> data_;
-int max_val = 255; */
 
 Image::Image(){
    cols_ = 0;
@@ -36,4 +31,9 @@ std::vector<int> Image::ComputeHistogram(int bins){
     }
    }
    return result;
+}
+
+std::vector<int> Image::get_size(){
+  std::cout<<rows_<<"; "<<cols_<<std::endl;
+  return std::vector<int> {rows_, cols_};
 }
