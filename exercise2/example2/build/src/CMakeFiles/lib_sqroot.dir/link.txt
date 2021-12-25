@@ -1,0 +1,2 @@
+/Library/Developer/CommandLineTools/usr/bin/ar qc liblib_sqroot.a CMakeFiles/lib_sqroot.dir/sq_root.cpp.o
+/Library/Developer/CommandLineTools/usr/bin/ranlib liblib_sqroot.a
