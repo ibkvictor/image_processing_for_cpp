@@ -33,7 +33,40 @@ std::vector<int> Image::ComputeHistogram(int bins){
    return result;
 }
 
-std::vector<int> Image::get_size(){
+std::vector<int> Image::size() const {
   std::cout<<rows_<<"; "<<cols_<<std::endl;
   return std::vector<int> {rows_, cols_};
+}
+
+int Image::cols() const{
+  return cols;
+}
+
+int Image::rows() const {
+  return rows;
+}
+
+void Image::UpScale(int scale) {
+  std::vector<std::vector<int>> v (rows_ * scale, <std::vector<int> (cols_ * scale, 0))
+  for(auto a = 0; a < rows_; a++){
+   for(auto b = 0; b < cols_; b++){ 
+    v[a * scale][b * scale] = data_[a][b];
+    for(auto c = 0; c <=scale; c++){
+     for(auto d = 0; d <= scale: d++)
+      if(v[(a * scale) + c][(b * scale) + d] == 0){
+       v[(a * scale) + c][(b * scale) + d] = data_[a][b];
+      }
+     }
+    }
+   }
+  }
+}
+
+void Image::DownScale(int scale) {
+  std::vector<std::vector<int>> v (rows_ /scale, <std::vector<int> (cols_ * scale, 0))
+  for(auto a = 0; a < rows_; a *= scale){
+   for(auto b = 0; b < cols_; b *= scale) {
+    v[(int) a/scale][(int) b/scale] = data_[a][b];
+   }
+  }
 }
