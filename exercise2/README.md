@@ -15,7 +15,7 @@ The class works using a linked shared library "libio_tools.so" found in the "igg
 The image class implements the remaining functions as defined in the "src/image.h" header file. It constructs a representation of an image using c++ std::vector type and store values for the number of rows and cols. Indexing into the image is allowed using the "at()" function operator. Similarly, the size of the image is fetched using "siee()". The class goes further to fully implement resizing of images upscaling, increasing the scale, and downscaling, reducing the image. Thus, image objects can be zoomed into and out of. To facilitate input-output from and to files, functions are described to enable reading and writing to files using only the filename.
 
 ## Instructions
-# Getting the folder
+### Getting the folder
 Clone the repo using the https link provided to this remote repo.
 * "git clone https://github.com/ibkvictor/image_processing_for_cpp.git"
 You would be using the sub directory "igg_image" in exercise2.
