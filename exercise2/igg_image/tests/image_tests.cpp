@@ -41,7 +41,7 @@ TEST(Image_DownScale normal){
 		}
 	}
 	img.DownScale(2);
-	EXPECT_EQ({img.at(0,0), img.at(1,1)}, {255, 0));
+	EXPECT_EQ({img.at(0,0), img.at(1,1)}, {255, 0});
 }
 
 TEST(Image_UpScale normal){
