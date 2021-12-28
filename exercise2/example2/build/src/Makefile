@@ -156,6 +156,21 @@ bin_main/fast:
 .PHONY : bin_main/fast
 
 # Convenience name for target.
+src/CMakeFiles/lib_blah.dir/rule:
+	cd /Users/user/Documents/image_processing_cpp_exercies/exercise2/example2/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/lib_blah.dir/rule
+.PHONY : src/CMakeFiles/lib_blah.dir/rule
+
+# Convenience name for target.
+lib_blah: src/CMakeFiles/lib_blah.dir/rule
+
+.PHONY : lib_blah
+
+# fast build rule for target.
+lib_blah/fast:
+	cd /Users/user/Documents/image_processing_cpp_exercies/exercise2/example2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/lib_blah.dir/build.make src/CMakeFiles/lib_blah.dir/build
+.PHONY : lib_blah/fast
+
+# Convenience name for target.
 src/CMakeFiles/lib_sqroot.dir/rule:
 	cd /Users/user/Documents/image_processing_cpp_exercies/exercise2/example2/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/lib_sqroot.dir/rule
 .PHONY : src/CMakeFiles/lib_sqroot.dir/rule
@@ -169,6 +184,33 @@ lib_sqroot: src/CMakeFiles/lib_sqroot.dir/rule
 lib_sqroot/fast:
 	cd /Users/user/Documents/image_processing_cpp_exercies/exercise2/example2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/lib_sqroot.dir/build.make src/CMakeFiles/lib_sqroot.dir/build
 .PHONY : lib_sqroot/fast
+
+blah.o: blah.cpp.o
+
+.PHONY : blah.o
+
+# target to build an object file
+blah.cpp.o:
+	cd /Users/user/Documents/image_processing_cpp_exercies/exercise2/example2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/lib_blah.dir/build.make src/CMakeFiles/lib_blah.dir/blah.cpp.o
+.PHONY : blah.cpp.o
+
+blah.i: blah.cpp.i
+
+.PHONY : blah.i
+
+# target to preprocess a source file
+blah.cpp.i:
+	cd /Users/user/Documents/image_processing_cpp_exercies/exercise2/example2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/lib_blah.dir/build.make src/CMakeFiles/lib_blah.dir/blah.cpp.i
+.PHONY : blah.cpp.i
+
+blah.s: blah.cpp.s
+
+.PHONY : blah.s
+
+# target to generate assembly for a file
+blah.cpp.s:
+	cd /Users/user/Documents/image_processing_cpp_exercies/exercise2/example2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/lib_blah.dir/build.make src/CMakeFiles/lib_blah.dir/blah.cpp.s
+.PHONY : blah.cpp.s
 
 main.o: main.cpp.o
 
@@ -234,7 +276,11 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... bin_main"
+	@echo "... lib_blah"
 	@echo "... lib_sqroot"
+	@echo "... blah.o"
+	@echo "... blah.i"
+	@echo "... blah.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

@@ -2,6 +2,7 @@
 #include <vector>
 #include <iostream>
 using namespace igg;
+#include <cassert>
 
 Image::Image(){
    cols_ = 0;
@@ -69,4 +70,23 @@ void Image::DownScale(int scale) {
     v[(int) a/scale][(int) b/scale] = data_[a][b];
    }
   }
+}
+
+bool Image::FromFile(){
+
+}
+
+void Image::ToFile(){
+  vector<int> storage;
+  for(auto &a : data_){
+   for(auto &b : a){
+    storage.push_back(b);
+   {
+  }
+  std::assert(storage.size() == cols_*row_);
+  
+  ImageData d {rows_, cols_, max_val_, data
+  if (io_tools::WriteToPgm("file_name")
+
+
 }

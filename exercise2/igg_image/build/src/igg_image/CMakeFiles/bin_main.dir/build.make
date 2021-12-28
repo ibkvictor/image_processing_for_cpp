@@ -99,6 +99,7 @@ bin_main_EXTERNAL_OBJECTS =
 ../bin/bin_main: src/igg_image/CMakeFiles/bin_main.dir/main.cpp.o
 ../bin/bin_main: src/igg_image/CMakeFiles/bin_main.dir/build.make
 ../bin/bin_main: ../lib/libimage.a
+../bin/bin_main: ../lib/libio_tools.dylib
 ../bin/bin_main: src/igg_image/CMakeFiles/bin_main.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/user/Documents/image_processing_cpp_exercies/exercise2/igg_image/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../../../bin/bin_main"
 	cd /Users/user/Documents/image_processing_cpp_exercies/exercise2/igg_image/build/src/igg_image && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/bin_main.dir/link.txt --verbose=$(VERBOSE)

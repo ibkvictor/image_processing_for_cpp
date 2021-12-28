@@ -6,9 +6,15 @@
 
 #IncludeRegexTransform: 
 
+/Users/user/Documents/image_processing_cpp_exercies/exercise2/example2/src/blah.h
+iostream
+-
+
 /Users/user/Documents/image_processing_cpp_exercies/exercise2/example2/src/main.cpp
 sq_root.h
 /Users/user/Documents/image_processing_cpp_exercies/exercise2/example2/src/sq_root.h
+blah.h
+/Users/user/Documents/image_processing_cpp_exercies/exercise2/example2/src/blah.h
 
 /Users/user/Documents/image_processing_cpp_exercies/exercise2/example2/src/sq_root.h
 iostream

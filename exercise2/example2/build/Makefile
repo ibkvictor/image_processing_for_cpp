@@ -154,6 +154,19 @@ bin_main/fast:
 .PHONY : bin_main/fast
 
 #=============================================================================
+# Target rules for targets named lib_blah
+
+# Build rule for target.
+lib_blah: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib_blah
+.PHONY : lib_blah
+
+# fast build rule for target.
+lib_blah/fast:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/lib_blah.dir/build.make src/CMakeFiles/lib_blah.dir/build
+.PHONY : lib_blah/fast
+
+#=============================================================================
 # Target rules for targets named lib_sqroot
 
 # Build rule for target.
@@ -568,6 +581,7 @@ help:
 	@echo "... NightlyTest"
 	@echo "... NightlyUpdate"
 	@echo "... bin_main"
+	@echo "... lib_blah"
 	@echo "... lib_sqroot"
 .PHONY : help
 

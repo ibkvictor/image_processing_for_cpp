@@ -5,6 +5,7 @@
 /Users/user/Documents/image_processing_cpp_exercies/exercise2/example2/build/src/CMakeFiles/edit_cache.dir
 /Users/user/Documents/image_processing_cpp_exercies/exercise2/example2/build/src/CMakeFiles/test.dir
 /Users/user/Documents/image_processing_cpp_exercies/exercise2/example2/build/src/CMakeFiles/bin_main.dir
+/Users/user/Documents/image_processing_cpp_exercies/exercise2/example2/build/src/CMakeFiles/lib_blah.dir
 /Users/user/Documents/image_processing_cpp_exercies/exercise2/example2/build/src/CMakeFiles/lib_sqroot.dir
 /Users/user/Documents/image_processing_cpp_exercies/exercise2/example2/build/tests/CMakeFiles/rebuild_cache.dir
 /Users/user/Documents/image_processing_cpp_exercies/exercise2/example2/build/tests/CMakeFiles/ContinuousCoverage.dir

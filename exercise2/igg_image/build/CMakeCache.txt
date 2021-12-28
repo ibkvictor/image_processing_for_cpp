@@ -327,7 +327,7 @@ initial_matrix_BINARY_DIR:STATIC=/Users/user/Documents/image_processing_cpp_exer
 initial_matrix_SOURCE_DIR:STATIC=/Users/user/Documents/image_processing_cpp_exercies/exercise2/igg_image
 
 //Path to a library.
-io_tools:FILEPATH=io_tools-NOTFOUND
+io_tools:FILEPATH=/Users/user/Documents/image_processing_cpp_exercies/exercise2/igg_image/lib/libio_tools.dylib
 
 
 ########################
