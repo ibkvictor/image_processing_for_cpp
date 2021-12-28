@@ -10,11 +10,13 @@ set(CMAKE_CXX_COMPILER_ID "Clang")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "../src"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
   "/Users/user/Documents/image_processing_cpp_exercies/exercise2/example2/build/src/CMakeFiles/lib_sqroot.dir/DependInfo.cmake"
+  "/Users/user/Documents/image_processing_cpp_exercies/exercise2/example2/build/src/CMakeFiles/lib_blah.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.
