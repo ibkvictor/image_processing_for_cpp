@@ -75,7 +75,8 @@ bool Image::FillFromPgm(const std::string &file_name){
   io_tools::ImageData image_data = io_tools::ReadFromPgm(file_name);
   rows_ = image_data.rows;
   cols_ = image_data.cols;
-  if (image_data.cols == 0 && image_data.rows == 0) {
+
+  if (image_data.cols != 0 && image_data.rows != 0) {
    for(auto a = 0; a <= image_data.rows; a++ ){
     std::vector<int> v;
     for(auto b = 0; b <= image_data.cols; b++){
@@ -83,6 +84,11 @@ bool Image::FillFromPgm(const std::string &file_name){
     }
     data_.push_back(v);
     v.clear();
+   }
+   for(auto &a :data_){
+    for(auto &b :a){
+     std::cout<<b<<" ";
+    }
    }
    return true;
   }

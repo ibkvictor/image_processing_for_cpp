@@ -20,7 +20,9 @@ set(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/lib)
 include_directories(${PROJECT_SOURCE_DIR}/src)
 
 add_subdirectory(src)
+
 enable_testing()
+
 add_subdirectory(tests)
 
 ################################################################################
