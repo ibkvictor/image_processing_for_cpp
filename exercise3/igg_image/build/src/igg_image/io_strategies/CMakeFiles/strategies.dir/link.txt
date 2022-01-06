@@ -1,2 +1,0 @@
-/Library/Developer/CommandLineTools/usr/bin/ar qc ../../../../lib/libstrategies.a CMakeFiles/strategies.dir/dummy_strategy.cpp.o
-/Library/Developer/CommandLineTools/usr/bin/ranlib ../../../../lib/libstrategies.a
