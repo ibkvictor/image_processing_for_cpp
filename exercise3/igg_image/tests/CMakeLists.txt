@@ -1,4 +1,4 @@
-add_subdirectory(/usr/src/gtest
+add_subdirectory("/Users/user/Documents/image_processing_cpp_exercies/googletest-release-1.8.0/googletest"
                  ${PROJECT_BINARY_DIR}/gtest)
 include(CTest) # Include testing cmake package.
 set(TEST_BINARY ${PROJECT_NAME}_test)
