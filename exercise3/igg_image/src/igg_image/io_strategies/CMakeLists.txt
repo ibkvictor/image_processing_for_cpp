@@ -1,4 +1,4 @@
-add_library(strategies
+add_library(strategies SHARED
             ${PNG_LIBRARIES}
 	    ppm_strategy.cpp
 	    png_strategy.cpp

@@ -8,6 +8,8 @@ TEST ( test_init, normal ){
 }
 
 TEST ( test_init, extreme ){
-	ASSERT_EQ(Image(4, 4, DummyIoStrategy()).at(0, 0).red, 0);
+	DummyIoStrategy dum;
+	IoStrategy& stra = dum;
+	ASSERT_EQ(Image(4, 4, stra).at(0, 0).red, 0);
 }
 

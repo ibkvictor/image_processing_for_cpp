@@ -1,18 +1,17 @@
 #include <gtest/gtest.h>
 #include "igg_image/image.h"
-#include "igg_image/io_strategies/strategy.h"
 #include "igg_image/io_strategies/dummy_strategy.h"
 #include "igg_image/io_strategies/ppm_strategy.h"
 
 using namespace igg;
 
 TEST ( test_resize, normal ){
-        Image img (2, 2, DummyIoStrategy());
+        Image img1 (2, 2, DummyIoStrategy());
 	//making left and right bottom corners color purple red + blue;
-	img.at(0,0) = {128, 128, 0};
-	img.at(1,1) = {128, 128, 0};
-	img.UpScale(2);
-	ASSERT_EQ(128, img.at(1,0).red);
+	img1.at(0,0) = {128, 128, 0};
+	img1.at(1,1) = {128, 128, 0};
+	img1.UpScale(2);
+	ASSERT_EQ(128, img1.at(1,0).red);
 }
 
 TEST ( test_resize, extreme ){
