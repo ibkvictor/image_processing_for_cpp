@@ -4,14 +4,14 @@
 
 using namespace igg;
 
-TEST ( Image, WriteToDisk_extreme ){
+TEST ( test_from_ppm, normal ){
         PpmIoStrategy ppm;
         Image img_temp (ppm);
         ASSERT_EQ(img_temp.ReadFromDisk("data/pbmlib.ascii.ppm"), true);
         ASSERT_EQ( img_temp.rows(), 300 );
 }
 
-TEST ( test_from_png, extreme ){
+TEST ( test_from_ppm, extreme ){
         PpmIoStrategy ppm;
         Image img_temp (ppm);
         ASSERT_EQ(img_temp.ReadFromDisk("data/pbmlib.ascii.ppm"), true);

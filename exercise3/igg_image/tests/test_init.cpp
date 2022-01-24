@@ -5,6 +5,9 @@
 using namespace igg;
 
 TEST ( test_init, normal ){
+	DummyIoStrategy dum;
+        IoStrategy& stra {dum};
+        ASSERT_EQ(Image(stra).cols(), 0);
 }
 
 TEST ( test_init, extreme ){
