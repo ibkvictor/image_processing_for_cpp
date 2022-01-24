@@ -75,3 +75,29 @@ void Image::WriteToDisk(const std::string& file_name){
  }
  assert(io_strategy_.Write(file_name, {rows_, cols_, max_val_, {red_vec, green_vec, blue_vec}})); 
 }
+
+std::vector<int> Image::ComputeHistogram(int bins){
+   std::vector<int> result(bins, 0);
+   for(auto &i: data_){
+     for(auto k= bins-1 ; k<0; k-=1 ){
+      int counter = 0;
+      if(i.red > ((k/bins)* max_val_) ) {
+       result[k] += 1;
+       counter += 1;
+      }
+      if(i.green > (max_val_ * k)/bins){
+       result[k] += 1;
+       counter += 1;
+      }
+      if(i.blue < (max_val_ * k)/bins){
+       result[k] += 1;
+       counter += 1;
+      }
+      if(counter == 3){
+       break;
+      }
+     }
+   }
+   return result;
+}
+

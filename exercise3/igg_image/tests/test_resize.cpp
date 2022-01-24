@@ -1,5 +1,6 @@
 #include <gtest/gtest.h>
 #include "igg_image/image.h"
+#include "igg_image/io_strategies/strategy.h"
 #include "igg_image/io_strategies/dummy_strategy.h"
 #include "igg_image/io_strategies/ppm_strategy.h"
 
@@ -15,8 +16,8 @@ TEST ( test_resize, normal ){
 }
 
 TEST ( test_resize, extreme ){
-        IoStrategy& io_strategy;
-	Image img (io_strategy(PpmIoStrategy()));
+	PpmIoStrategy ppm;
+	Image img (ppm);
 	img.ReadFromDisk("data/pbmlib.ascii.ppm");
 	int holder = img.at(5,5).red;
 	img.UpScale(2);

@@ -5,6 +5,7 @@
 #pragma once
 
 #include <vector>
+#include "igg_image/io_strategies/strategy.h"
 #include "igg_image/io_strategies/ppm_strategy.h"
 #include "igg_image/io_strategies/png_strategy.h"
 
@@ -25,8 +26,8 @@ class Image {
   int cols() const;
   Pixel &at (int row, int col);
   void DownScale(int scale);
-  void UpScale(int scale);
-
+  void UpScale(int scale); 
+  std::vector<int> ComputeHistogram(int bins);
   // TODO: fill public interface.
   bool ReadFromDisk(const std::string& file_name);
   void WriteToDisk(const std::string& file_name);

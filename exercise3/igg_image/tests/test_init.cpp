@@ -1,4 +1,4 @@
-include <gtest/gtest.h>
+#include <gtest/gtest.h>
 #include "igg_image/image.h"
 #include "igg_image/io_strategies/dummy_strategy.h"
 

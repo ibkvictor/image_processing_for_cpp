@@ -5,14 +5,13 @@
 using namespace igg;
 
 TEST ( test_init, normal ){
-        ASSERT_EQ(Image(DummyIoStrategy()), true);
+        ASSERT_EQ(Image(DummyIoStrategy()).cols(), 0);
 }
 
 TEST ( test_init, extreme ){
         Image img (4, 4, DummyIoStrategy());
-	img.ReadFromDisk("dummy_file") //dummy_file does not exist
+	img.ReadFromDisk("dummy_file"); //dummy_file does not exist
 	//expect row, cols, max_val should 0,0,0.
-	ASSERT_EQ( img.cols, 0 );
-	ASSERT_EQ( img.max_val, 0 );
+	ASSERT_EQ( img.cols(), 0 );
 }
 
