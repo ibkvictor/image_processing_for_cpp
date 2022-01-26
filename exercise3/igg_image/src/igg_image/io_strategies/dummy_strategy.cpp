@@ -3,7 +3,7 @@
 // Email: igor.bogoslavskyi@uni-bonn.de.
 
 #include <string>
-
+#include <iostream>
 #include "igg_image/io_strategies/dummy_strategy.h"
 
 namespace igg {

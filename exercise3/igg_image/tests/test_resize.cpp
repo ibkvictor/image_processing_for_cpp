@@ -17,7 +17,7 @@ TEST ( test_resize, normal ){
 TEST ( test_resize, extreme ){
 	PpmIoStrategy ppm;
 	Image img (ppm);
-	img.ReadFromDisk("data/pbmlib.ascii.ppm");
+	img.ReadFromDisk("../data/pbmlib.ascii.ppm");
 	int holder = img.at(5,5).red;
 	img.UpScale(2);
 	img.DownScale(2);
