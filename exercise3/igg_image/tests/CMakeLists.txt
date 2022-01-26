@@ -12,8 +12,10 @@ add_executable(
    test_from_png.cpp
 )
 target_link_libraries(${TEST_BINARY}
-   image
-   gtest gtest_main)
+			image
+			strategies
+			gtest
+			gtest_main)
    
 add_test(
    NAME ${TEST_BINARY}

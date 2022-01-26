@@ -20,8 +20,7 @@ struct ImageData {
 
 class IoStrategy {
  public:
-  virtual bool Write(const std::string& file_name,
-                     const ImageData& data) const = 0;
+  virtual bool Write(const std::string& file_name, const ImageData& data) const = 0;
   virtual ImageData Read(const std::string& file_name) const = 0;
   virtual ~IoStrategy() {}
 };
