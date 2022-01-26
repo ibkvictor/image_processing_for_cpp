@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/user/Documents/image_processing_cpp_exercies/exercise2/igg_image/src/igg_image/image.cpp
+image.h
+/Users/user/Documents/image_processing_cpp_exercies/exercise2/igg_image/src/igg_image/image.h
+vector
+-
+iostream
+-
+cassert
+-
+
+/Users/user/Documents/image_processing_cpp_exercies/exercise2/igg_image/src/igg_image/image.h
+io_tools.h
+/Users/user/Documents/image_processing_cpp_exercies/exercise2/igg_image/src/igg_image/io_tools.h
+string
+-
+vector
+-
+
+/Users/user/Documents/image_processing_cpp_exercies/exercise2/igg_image/src/igg_image/io_tools.h
+fstream
+-
+string
+-
+vector
+-
+
+/Users/user/Documents/image_processing_cpp_exercies/exercise2/igg_image/src/igg_image/main.cpp
+iostream
+-
+image.h
+/Users/user/Documents/image_processing_cpp_exercies/exercise2/igg_image/src/igg_image/image.h
+image.cpp
+/Users/user/Documents/image_processing_cpp_exercies/exercise2/igg_image/src/igg_image/image.cpp
+
